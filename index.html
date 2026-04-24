@@ -1,239 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Premium landscaping services for elegant outdoor spaces. Book lawn care, garden design, irrigation, and seasonal cleanups with GreenScape." />
-  <title>GreenScape | Premium Landscaping</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional landscaping website project built with HTML, CSS, and JavaScript." />
+    <title>EverGreen Landscaping | Premium Outdoor Services</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-blur blur-1"></div>
-  <div class="page-blur blur-2"></div>
+    <header class="site-header" id="home">
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="logo">
+                <span class="logo-mark">E</span>
+                EverGreen<span>Landscaping</span>
+            </a>
 
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="logo">
-        <span class="logo-mark">GS</span>
-        <span class="logo-text">GreenScape</span>
-      </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
 
-      <div class="nav-links" id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#booking">Book</a>
-        <a href="#contact">Contact</a>
-      </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#booking">Book</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-btn" id="themeBtn">Dark</button></li>
+            </ul>
+        </nav>
 
-      <div class="nav-actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero" id="home">
-    <div class="container hero-grid">
-      <div class="hero-copy reveal">
-        <span class="eyebrow">Luxury outdoor spaces, built to last</span>
-        <h1>Landscaping that makes your property look unforgettable.</h1>
-        <p>
-          From premium lawn care to custom garden design and irrigation systems,
-          we create polished outdoor spaces that raise curb appeal and make maintenance easy.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#booking" class="btn btn-primary">Book a Consultation</a>
-          <a href="#services" class="btn btn-secondary">View Services</a>
-        </div>
-          <div class="hero-stats">
-          <div class="stat glass reveal">
-            <strong>250+</strong>
-            <span>Projects Completed</span>
-          </div>
-          <div class="stat glass reveal">
-            <strong>4.9/5</strong>
-            <span>Average Rating</span>
-          </div>
-          <div class="stat glass reveal">
-            <strong>7 Days</strong>
-            <span>Average Start Time</span>
-          </div>
-        </div>
-      </div>
-       <div class="hero-card glass reveal">
-        <div class="hero-card-top">
-          <span class="badge">Now Booking Spring & Summer</span>
-          <h2>Get a premium look without the guesswork.</h2>
-          <p>We handle design, cleanup, mowing, planting, irrigation, and recurring property care.</p>
-        </div>
-        <div class="hero-service-list">
-          <div class="mini-service">
-            <span>✓</span>
-            <p>Landscape Design</p>
-          </div>
-          <div class="mini-service">
-            <span>✓</span>
-            <p>Lawn Maintenance</p>
-          </div>
-          <div class="mini-service">
-            <span>✓</span>
-            <p>Irrigation Systems</p>
-          </div>
-          <div class="mini-service">
-            <span>✓</span>
-            <p>Seasonal Cleanups</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-   <section class="section about" id="about">
-    <div class="container about-grid">
-      <div class="section-copy reveal">
-        <span class="eyebrow">What we do</span>
-        <h2>We design, build, and maintain outdoor spaces that feel high-end.</h2>
-        <p>
-          GreenScape helps homeowners and businesses upgrade curb appeal with thoughtful design,
-          dependable maintenance, and detail-focused installation work.
-        </p>
-      </div>
-       <div class="about-panel glass reveal">
-        <div class="feature-item">
-          <h3>Design-first approach</h3>
-          <p>Every yard is planned for beauty, durability, and easy long-term upkeep.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Fast scheduling</h3>
-          <p>Book your preferred date online and we’ll confirm your appointment instantly.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Reliable service</h3>
-          <p>Clear communication, premium workmanship, and recurring maintenance plans.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-    <section class="section services" id="services">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Services</span>
-        <h2>Premium services for every season</h2>
-        <p>Choose a one-time service or build a recurring property care plan.</p>
-      </div>
-       <div class="service-grid">
-        <article class="service-card glass reveal">
-          <div class="service-icon">🌿</div>
-          <h3>Lawn Care</h3>
-          <p>Mowing, edging, fertilizing, and detail work that keeps your lawn sharp and consistent.</p>
-        </article>
-        <article class="service-card glass reveal">
-          <div class="service-icon">🌸</div>
-          <h3>Garden Design</h3>
-          <p>Plant selection, layout planning, fresh beds, mulch, and elegant visual upgrades.</p>
-        </article>
-         <article class="service-card glass reveal">
-          <div class="service-icon">💧</div>
-          <h3>Irrigation</h3>
-          <p>Sprinkler setup, repairs, and water-smart systems built for healthy landscapes.</p>
-        </article>
-         <article class="service-card glass reveal">
-          <div class="service-icon">✂️</div>
-          <h3>Tree & Shrub Care</h3>
-          <p>Pruning, trimming, shaping, and cleanup to keep every detail looking polished.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section class="section booking" id="booking">
-    <div class="container booking-grid">
-      <div class="booking-copy reveal">
-        <span class="eyebrow">Booking</span>
-        <h2>Book your landscaping appointment online</h2>
-        <p>
-          Choose a service, date, and time. Already reserved time slots are blocked automatically.
-        </p>
-         <div class="booking-info glass">
-          <p><strong>Business Hours</strong></p>
-          <p>Monday–Saturday · 8:00 AM – 6:00 PM</p>
-        </div>
-      </div>
-       <div class="booking-card glass reveal">
-        <form id="bookingForm" class="booking-form">
-          <div class="field-row">
-            <div class="field-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required />
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <p class="eyebrow">Premium Landscaping Website Project</p>
+                <h1>Transforming outdoor spaces with clean, modern design.</h1>
+                <p class="hero-text">
+                    A professional landscaping website built to showcase services, highlight projects,
+                    and capture appointment requests through a polished booking experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn primary">Book a Consultation</a>
+                    <a href="#projects" class="btn secondary">View Projects</a>
+                </div>
             </div>
-            <div class="field-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            </div>
-          </div>
-           <div class="field-row">
-            <div class="field-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required />
-            </div>
-            <div class="field-group">
-              <label for="service">Service</label>
-              <select id="service" name="service" required>
-                <option value="">Select a service</option>
-                <option value="Lawn Care">Lawn Care</option>
-                <option value="Garden Design">Garden Design</option>
-                <option value="Irrigation">Irrigation</option>
-                <option value="Tree & Shrub Care">Tree & Shrub Care</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field-group">
-              <label for="date">Preferred Date</label>
-              <input type="date" id="date" name="date" required />
-            </div>
-            <div class="field-group">
-              <label for="time">Preferred Time</label>
-              <select id="time" name="time" required>
-                <option value="">Select a time</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-group">
-            <label for="notes">Project Notes</label>
-            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your yard, goals, or service needs..."></textarea>
-          </div>
 
-          <button type="submit" class="btn btn-primary btn-full">Confirm Appointment</button>
-          <p id="formMessage" class="form-message"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-   <footer class="footer" id="contact">
-    <div class="container footer-grid">
-      <div>
-        <h3>GreenScape</h3>
-        <p>Premium landscaping for homes and businesses.</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>hello@greenscape.com</p>
-        <p>(555) 123-4567</p>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <p>Mon–Sat · 8:00 AM – 6:00 PM</p>
-      </div>
-    </div>
-  </footer>
+            <div class="hero-card fade-in">
+                <p>Project Stack</p>
+                <h3>HTML • CSS • JavaScript</h3>
+                <span>Responsive UI • Dark Mode • Booking Form</span>
+            </div>
+        </section>
+    </header>
 
-  <script src="/landscaping-website/assets/js/script.js"></script>
+    <main>
+        <section class="stats">
+            <article class="stat-card">
+                <h2>100%</h2>
+                <p>Responsive Design</p>
+            </article>
+            <article class="stat-card">
+                <h2>4+</h2>
+                <p>Service Sections</p>
+            </article>
+            <article class="stat-card">
+                <h2>1</h2>
+                <p>Portfolio Project</p>
+            </article>
+        </section>
+
+        <section class="section" id="services">
+            <div class="section-heading">
+                <p class="eyebrow">Services</p>
+                <h2>Professional Outdoor Care</h2>
+                <p>Clear service cards help customers understand what the business offers and guide them toward booking.</p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <span class="card-icon">✦</span>
+                    <h3>Lawn Maintenance</h3>
+                    <p>Mowing, edging, trimming, and routine care for a clean and healthy lawn.</p>
+                </article>
+                <article class="service-card">
+                    <span class="card-icon">✿</span>
+                    <h3>Garden Design</h3>
+                    <p>Plant layouts, mulch beds, flower placement, and curb appeal improvements.</p>
+                </article>
+                <article class="service-card">
+                    <span class="card-icon">☘</span>
+                    <h3>Seasonal Cleanup</h3>
+                    <p>Leaf removal, debris cleanup, pruning, and preparation for seasonal changes.</p>
+                </article>
+                <article class="service-card">
+                    <span class="card-icon">◌</span>
+                    <h3>Irrigation Support</h3>
+                    <p>Basic sprinkler checks, watering recommendations, and outdoor care planning.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section process" id="process">
+            <div class="section-heading">
+                <p class="eyebrow">Process</p>
+                <h2>Simple Booking Flow</h2>
+                <p>A clean customer journey from browsing services to submitting a booking request.</p>
+            </div>
+
+            <div class="process-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Choose Service</h3>
+                    <p>Customer selects the landscaping service that fits their property needs.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Submit Request</h3>
+                    <p>Booking form collects contact details, service type, date, and project notes.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Confirm Appointment</h3>
+                    <p>The project is ready to connect to a backend, email tool, or database later.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Portfolio</p>
+                <h2>Project Highlights</h2>
+                <p>Visual cards make the site feel like a real business portfolio and improve presentation value.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image image-one"></div>
+                    <h3>Backyard Refresh</h3>
+                    <p>Modern outdoor refresh concept with clean lawn layout and natural styling.</p>
+                </article>
+                <article class="project-card">
+                    <div class="project-image image-two"></div>
+                    <h3>Front Yard Upgrade</h3>
+                    <p>Curb appeal design concept using clean spacing, mulch beds, and plant accents.</p>
+                </article>
+                <article class="project-card">
+                    <div class="project-image image-three"></div>
+                    <h3>Seasonal Cleanup</h3>
+                    <p>Professional cleanup section designed to show fast transformation potential.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section booking" id="booking">
+            <div class="booking-card">
+                <div class="booking-copy">
+                    <p class="eyebrow">Book Online</p>
+                    <h2>Schedule a landscaping appointment</h2>
+                    <p>
+                        This front-end booking form saves demo submissions in browser storage.
+                        It can later be connected to MongoDB, Firebase, or a real backend API.
+                    </p>
+
+                    <div class="trust-list">
+                        <p>✓ Mobile-friendly layout</p>
+                        <p>✓ Clean appointment form</p>
+                        <p>✓ Ready for backend integration</p>
+                    </div>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <label>
+                        Full Name
+                        <input type="text" id="name" placeholder="John Smith" required />
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" id="email" placeholder="john@email.com" required />
+                    </label>
+
+                    <label>
+                        Service
+                        <select id="service" required>
+                            <option value="">Select a service</option>
+                            <option>Lawn Maintenance</option>
+                            <option>Garden Design</option>
+                            <option>Seasonal Cleanup</option>
+                            <option>Irrigation Support</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Preferred Date
+                        <input type="date" id="date" required />
+                    </label>
+
+                    <label>
+                        Project Notes
+                        <textarea id="message" placeholder="Tell us about the property or service needed..."></textarea>
+                    </label>
+
+                    <button type="submit" class="btn primary full">Submit Booking</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <a href="#home" class="footer-logo">EverGreen<span>Landscaping</span></a>
+        <p>Professional landscaping website project built by Joshua Silva Colon.</p>
+        <p class="small">HTML • CSS • JavaScript • Responsive Design • Booking UI</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
